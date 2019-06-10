@@ -127,7 +127,7 @@ export default class HighchartsReactNative extends React.PureComponent {
         >
             <WebView
                 ref={(webView) => this.webView = webView}
-                source={highchartsLayout}
+                source={{ uri: 'highcharts-layout/index.html' }}
                 injectedJavaScript={this.addHighchartsScripts()}
                 originWhitelist={["*"]}
                 automaticallyAdjustContentInsets={true}
